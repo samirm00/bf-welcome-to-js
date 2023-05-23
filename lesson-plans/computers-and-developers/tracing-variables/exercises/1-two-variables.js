@@ -11,6 +11,7 @@
 
 // trace the program a few times with different values
 
+// Declare a variable x
 let x = 'Pieter';
 // let x = 'Blake';
 // let x = 'George';
