@@ -17,3 +17,12 @@ alert(transformation);
 /*  ===== Challenges =====
   - Put the characters back in the right order after the string was reversed.
 */
+
+let toNormal = '';
+for (const char of backwards) {
+  toNormal = char + toNormal;
+}
+
+let transformationAgain = backwards + ' -> ' + toNormal;
+
+alert(transformationAgain);

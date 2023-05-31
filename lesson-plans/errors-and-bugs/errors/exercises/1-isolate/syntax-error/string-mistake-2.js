@@ -1,25 +1,22 @@
-
-
 'use strict';
 
 console.log('--- in execution phase ---');
 
-
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: Unexpected string
 
-  location:
+  location: line 23
 
-  life cycle:
+  life cycle: execution
 
-  the mistake:
+  the mistake: using ' to surrounded by  a a string  with '
 
-  the fix(es):
+  the fix(es): using " instead of '
 */
 
-const quotesInQuotes = 'remind yourself ''i can do this!'' at least once a day';
+const quotesInQuotes = "yourself ''i can do this!'' at least once a day";
 
-
+console.log(quotesInQuotes);

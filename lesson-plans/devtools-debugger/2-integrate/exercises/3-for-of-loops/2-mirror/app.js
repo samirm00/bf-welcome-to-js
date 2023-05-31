@@ -12,12 +12,19 @@ whenFormDataChanges('input', () => {
   // --- read the user's input ---
 
   let userText = readString('to-mirror');
+  let userDelimiter = readString('delimiter');
 
   // --- mirror the text ---
 
+  // the delimiter by default is vertical bar
   let mirrored = ' | ';
+
+  // if there is a user delimiter then use it
+  if (userDelimiter) {
+    mirrored = ` ${userDelimiter} `;
+  }
   for (let char of userText) {
-    mirrored = char + mirrored + char;
+    mirrored = char.toUpperCase() + mirrored + char.toLowerCase();
   }
 
   // --- display the result ---

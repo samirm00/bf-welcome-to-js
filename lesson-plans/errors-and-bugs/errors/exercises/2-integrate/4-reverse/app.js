@@ -8,16 +8,16 @@ import {
 /*
   environment:
 
-  name:
-  message:
+  name: TypeError
+  message: screaming is not iterable
 
-  location:
+  location: line 34
 
-  life cycle:
+  life cycle: execution 
 
-  the mistake:
+  the mistake: try to iterate throw a boolean 
 
-  the fix(es):
+  the fix(es): iterate throw a string text
 */
 
 whenFormDataChanges('reversify', () => {
@@ -31,7 +31,7 @@ whenFormDataChanges('reversify', () => {
   // --- reverse the string input ---
 
   let reversed = '';
-  for (let character of screaming) {
+  for (let character of text) {
     reversed = character + reversed;
   }
 
