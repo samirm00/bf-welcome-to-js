@@ -3,8 +3,8 @@
 /*
   test cases:
     null -> ':('
-    '' -> 'too short'
-    'abcde' -> 'perfect'
+    '' -> ':('
+    'abcde' -> 'perfect!'
     'abcdef' -> 'too long'
 
   experiment 1
@@ -14,14 +14,14 @@
 
 */
 
-let input = prompt('enter something 5 characters long');
+let userInput = prompt('enter something 5 characters long');
 
-if ((input = null)) {
+if (!userInput) {
   alert(':(');
-} else if (input.length < 5) {
+} else if (userInput.length < 5) {
   alert('too short');
-} else if (input.length > 5) {
+} else if (userInput.length > 5) {
   alert('too long');
 } else {
-  alert('perfect');
+  alert('perfect!');
 }
