@@ -1,15 +1,15 @@
 'use strict';
 
 /* Mirror
+ this program will show the reversed text and the original text separated by |
+  Data In: any text
 
-  Data In:
-
-
-  Data Out:
-
+  Data Out: the reversed text | the text
 
   Test Cases:
-
+  'a' -> 'a | a'
+  'a' -> 'ba | ab'
+  'JavaScript' -> 'tpircSavaJ | JavaScript'
 
 */
 

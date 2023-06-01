@@ -1,15 +1,18 @@
 'use strict';
 
 /* Flip Five
+  This program reverses the input only if it is 5 characters long.
 
-  Data In:
-
+  Data In: any text
 
   Data Out:
-
-
+    the reversed input if it was 5 characters long
+    else it will prompt the user for another input
   Test Cases:
-
+'' -> ''
+    'abc' -> 'nope, try again' -> prompt again
+    'hello' -> 'olleh'
+    'JavaScript' -> 'nope, try again' -> prompt again
 
 */
 

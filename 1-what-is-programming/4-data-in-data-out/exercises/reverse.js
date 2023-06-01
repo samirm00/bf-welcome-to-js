@@ -1,15 +1,13 @@
 'use strict';
 
 /* Reverse
-
-  Data In:
-
-
-  Data Out:
-
-
+ this program will reverse any text
+  Data In: any text
+  Data Out: text reversed
   Test Cases:
-
+  'ab' -> 'ba'
+  'test' -> 'tset'
+  'JavaScript' -> 'tpircSavaJ'
 
 */
 

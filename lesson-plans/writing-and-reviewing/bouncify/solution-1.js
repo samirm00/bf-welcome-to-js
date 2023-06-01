@@ -49,11 +49,10 @@ for (const char of message) {
   if (specials.indexOf(char) === -1) {
     if (isUpperCase) {
       newMessage += char.toUpperCase();
-      isUpperCase = false;
     } else {
       newMessage += char.toLowerCase();
-      isUpperCase = true;
     }
+    isUpperCase = !isUpperCase;
   } else {
     newMessage += char;
   }

@@ -13,8 +13,13 @@
 let turtle = 'Vinnie';
 turtle = 'Yurtle';
 
+console.log(turtle);
 let food = 'lettuce';
 food = 'peanut';
 
+console.log(food);
+
 let x = 'abc';
 x = '-|-';
+
+console.log(x);

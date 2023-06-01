@@ -16,6 +16,10 @@
 
 let turtle = 'Vinnie';
 
+console.log(turtle);
 let food = 'lettuce';
 
+console.log(food);
+
 let x = 'abc';
+console.log(x);
