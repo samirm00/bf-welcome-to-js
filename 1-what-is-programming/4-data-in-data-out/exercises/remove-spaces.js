@@ -2,14 +2,14 @@
 
 /* Remove Spaces
 
-  Data In:
-
-
-  Data Out:
-
-
+this program will remove spaces from any text
+  Data In:  any text
+  Data Out: text without spaces
   Test Cases:
 
+  'a b' -> 'ab'
+  'my cat' -> 'mycat'
+  'a b c d f' -> 'abcdf'
 
 */
 
