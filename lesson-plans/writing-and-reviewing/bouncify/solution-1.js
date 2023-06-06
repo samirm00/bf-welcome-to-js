@@ -24,38 +24,50 @@
 
 */
 
-let message = '';
-while (true) {
-  // ask the user for input
-  let userInput = prompt('please enter something: ');
+let text = '';
 
-  // if userInput exists
-  if (userInput) {
-    message = userInput;
+// ask the user for input
+while (true) {
+  const input = prompt('please enter something : ');
+
+  // cancel
+  if (input === null) {
+    alert('there is no escape!');
+    continue;
+  }
+
+  // empty string
+  if (input === '') {
+    alert('no empty input, try again.');
+    continue;
+  }
+
+  if (input) {
+    text = input;
     break;
-  } else {
-    // Null or empty string
-    alert('no escape , you need to enter something.');
   }
 }
 
-// specials character
-const specials = '0123456789!?$#@&. ';
-let newMessage = '';
+console.log(text);
+
+const specials = ' !@#$%^&*()_-+=1234567890';
+
+let newtext = '';
 let isUpperCase = true;
 
-// loop through message
-for (const char of message) {
+// loop through text
+for (const char of text) {
+  // char is not in specials
   if (specials.indexOf(char) === -1) {
     if (isUpperCase) {
-      newMessage += char.toUpperCase();
+      newtext += char.toUpperCase();
     } else {
-      newMessage += char.toLowerCase();
+      newtext += char.toLowerCase();
     }
     isUpperCase = !isUpperCase;
   } else {
-    newMessage += char;
+    newtext += char;
   }
 }
 
-alert(newMessage);
+alert(newtext);

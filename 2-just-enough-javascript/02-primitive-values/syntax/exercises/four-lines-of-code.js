@@ -1,21 +1,11 @@
-// #todo
-
-// prettier-ignore
-{ // so prettier does not remove the extra spacing
-
 'use strict';
 
+// #todo : remove the redundant block
 
-console.log('hello');
+console.log('hello'); //hello
 
+console.log(true); // true
 
-console.log(true);
+console.log(); // nothing will be logged
 
-
-console.log();
-
-
-console.log('are you hungry?', false);
-
-
-}
+console.log('are you hungry?', false); // are you hungry? false

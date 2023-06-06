@@ -1,11 +1,9 @@
-// #todo
-
 'use strict';
 
 // fix the error in this code
 
-favoriteVegetable = 'potato';
+let favoriteVegetable = 'potato';
 console.log(favoriteVegetable); // 'potato'
 
-let favoriteVegetable = 'carrot';
+favoriteVegetable = 'carrot';
 console.log(favoriteVegetable); // 'carrot'

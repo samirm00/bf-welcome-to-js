@@ -13,7 +13,7 @@ let message;
 if (word.length <= 2) {
   message = 'a short word';
 } else if (word.length < 3) {
-  // why is this path unreachable?
+  // why is this path unreachable? because we have the same condition in the if block
   message = 'unreachable path!';
 } else if (word.length < 5) {
   message = 'a perfect word';

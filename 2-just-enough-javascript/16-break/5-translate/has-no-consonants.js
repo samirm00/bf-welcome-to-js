@@ -1,13 +1,10 @@
-// #todo
-
 'use strict';
 
 /*
 
+  Data In: any text
 
-  Data In:
-
-  Data Out:
+  Data Out: notify the user if text has consonants or not
 
   Test Cases:
 
@@ -46,3 +43,28 @@
 /* ---   ?   --- */
 
 // alert(message)
+
+let letters = null;
+while (letters === null) {
+  letters = prompt('enter some letters');
+}
+
+let noConsonants = true;
+
+for (const letter of letters) {
+  const lowerCaseLetter = letter.toLowerCase();
+  if ('bcdfghjklmnpqrstvwxyz'.includes(lowerCaseLetter)) {
+    noConsonants = false;
+    break;
+  }
+}
+
+let message = '';
+
+if (noConsonants) {
+  message = '"' + letters + '" has no consonants';
+} else {
+  message = '"' + letters + '" has at least one consonant';
+}
+
+alert(message);

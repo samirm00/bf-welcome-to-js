@@ -1,15 +1,18 @@
-// #todo
-
 'use strict';
 
-/*
+/* Repeat a string
 
+  Data In: any text
 
-  Data In:
-
-  Data Out:
+  Data Out: text repeated text length times
 
   Test Cases:
+  null -> prompt again
+  "" -> nothing
+  'test' - >  test
+              test
+              test
+              test
 
 */
 
@@ -35,3 +38,20 @@
 /* ---   ?   --- */
 
 // alert(repeated)
+
+let input = null;
+
+// ask for input
+while (input === null) {
+  input = prompt('enter some text');
+}
+
+let repeated = '';
+let i = 0;
+
+while (i < input.length) {
+  repeated += '\n' + input;
+  i++;
+}
+
+alert(repeated);

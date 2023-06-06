@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // fill in the blanks to log the correct values
@@ -15,9 +13,3 @@ console.log(phrase); // ' a car'
 
 phrase = 'drive' + phrase;
 console.log(phrase); // 'drive a car'
-
-/* distractors:
-
-  Let
-
-*/

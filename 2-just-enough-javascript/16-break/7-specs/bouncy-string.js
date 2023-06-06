@@ -28,17 +28,37 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = _;
-while (_) {}
+let input = '';
+while (true) {
+  const userInput = prompt('Please enter something  only letters allowed : ');
+  if (!userInput) {
+    continue;
+  } else {
+    if (/^[a-zA-Z]+$/.test(userInput)) {
+      input = userInput;
+      break;
+    } else {
+      continue;
+    }
+  }
+}
 console.log('input:', input);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
+let isUpperCase = true;
 
 /* --- create final output --- */
 
-for (let _ of _) {
+for (let char of input) {
+  if (isUpperCase) {
+    output += char.toUpperCase();
+  } else {
+    output += char.toLowerCase();
+  }
+
+  isUpperCase = !isUpperCase;
 }
 
 /* --- alert the result --- */

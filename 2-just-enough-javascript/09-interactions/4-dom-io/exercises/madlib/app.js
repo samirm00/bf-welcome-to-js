@@ -5,13 +5,17 @@ import {
   displayString,
 } from '../../../../../lib/dom-io/index.js';
 
-whenFormDataChanges('______', () => {
-  // debugger;
+whenFormDataChanges('user-words', () => {
   console.log('\n--- form data changed ---');
 
   // --- read user input ---
+  const noun = readString('noun');
+  const verb = readString('verb');
+  const adjective = readString('adjective');
 
   // --- create a funny sentence ---
+  const sentence = `On ${adjective} days the ${noun} will always ${verb}.`;
 
   // --- display the sentence ---
+  displayString('funny-sentence', sentence);
 });

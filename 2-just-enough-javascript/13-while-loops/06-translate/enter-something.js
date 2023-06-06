@@ -1,15 +1,14 @@
-// #todo
-
 'use strict';
 
 /*
 
+  Data In: any text
 
-  Data In:
-
-  Data Out:
+  Data Out: a nice message tell the user if he/she enter something or not
 
   Test Cases:
+  '' -> 'you entered nothing :('
+  'test' -> 'thank you for something!
 
 */
 
@@ -34,3 +33,16 @@
 /* ---   ?   --- */
 
 // alert(output)
+
+let input = null;
+while (input === null) {
+  input = prompt('enter something : ');
+}
+
+let output = '';
+if (input === '') {
+  output = 'you entered nothing :(';
+} else {
+  output = 'thank you for something!';
+}
+alert(output);
