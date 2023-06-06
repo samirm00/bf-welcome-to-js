@@ -1,7 +1,8 @@
 'use strict';
 
-let theOrange = '';
+/* -- get an orange -- */
 
+let theOrange = '';
 while (theOrange === '') {
   const input = prompt('give me an orange, lower or upper case');
 
@@ -14,14 +15,17 @@ while (theOrange === '') {
   }
 }
 
-let description = '';
+/* -- describe the orange -- */
 
+let description = '';
 if (theOrange === 'orange') {
   description = 'small';
 } else if (theOrange === 'ORANGE') {
   description = 'big';
 } else {
-  description = 'small and big';
+  description = 'lumpy';
 }
+
+/* --- display the description for the user --- */
 
 alert(theOrange + ' is a ' + description + ' orange');

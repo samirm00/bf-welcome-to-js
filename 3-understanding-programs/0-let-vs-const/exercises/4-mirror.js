@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // use `const` for every variable that is never reassigned
@@ -11,7 +9,7 @@ while (input === null) {
 }
 
 let mirrored = ' | ';
-for (let character of input) {
+for (const character of input) {
   mirrored = character + mirrored + character;
   console.log(mirrored);
 }

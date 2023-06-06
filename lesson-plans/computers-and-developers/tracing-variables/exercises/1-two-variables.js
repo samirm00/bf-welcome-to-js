@@ -29,3 +29,7 @@ y = 'good bye ' + x;
 
 // read the variable y
 console.log(y);
+
+if (true) {
+  console.log('Hello');
+}
