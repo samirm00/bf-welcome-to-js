@@ -2,7 +2,8 @@
 
 /*
 
-  Trace the following code by commenting and uncommenting the different values for the 'weather' variable.
+  Trace the following code by commenting and uncommenting the
+   different values for the 'weather' variable.
   See what happens every time and different value is used
   and identify the exact line that is being executed
 

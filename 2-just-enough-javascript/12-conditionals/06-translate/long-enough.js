@@ -1,14 +1,14 @@
-// #todo
-
 'use strict';
+
 /*
-
-
-  Data In:
+  Data In: any text
 
   Data Out:
 
   Test Cases:
+  'test' -> 'too short'
+  'JavaScript' -> 'ong enough'
+  'React' -> 'exactly 5!'
 
 */
 
@@ -35,3 +35,19 @@
 /* ---   ?   --- */
 
 // alert(message)
+const userInput = prompt('enter anything longer than 5 characters ');
+
+let message = '';
+if (userInput !== null) {
+  if (userInput.length < 5) {
+    message = 'too short';
+  } else if (userInput.length > 5) {
+    message = 'long enough';
+  } else {
+    message = 'exactly 5!';
+  }
+} else {
+  message = 'you canceled :(';
+}
+
+alert(message);

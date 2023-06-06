@@ -1,15 +1,15 @@
-// #todo
-
 'use strict';
 
 /*
 
+  Data In: any text with more than 4 characters or cancel
 
-  Data In:
-
-  Data Out:
+  Data Out: text or 'you canceled'
 
   Test Cases:
+  null -> 'you canceled'
+  'me' -> prompt again
+  'JavaScript' -> 'JavaScript'
 
 */
 
@@ -32,3 +32,20 @@
 /* ---   ?   --- */
 
 // alert(input)
+
+let input = '';
+
+while (true) {
+  input = prompt(
+    'enter something longer than 4 characters, or "cancel" to leave',
+  );
+
+  if (input === null) {
+    input = 'you canceled';
+    break;
+  } else if (input.length > 4) {
+    break;
+  }
+}
+
+alert(input);

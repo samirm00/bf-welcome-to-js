@@ -1,15 +1,13 @@
-// #todo
-
 'use strict';
 
 let input = prompt('enter something with "ear" in it');
 
 let message;
-if (input === null) {
-  message = 'you canceled';
+if (!input) {
+  message = 'you entered nothing!';
 } else {
   if (input.includes('ear')) {
-    message = 'eary!';
+    message = 'eary! :)';
   } else {
     message = 'not eary :(';
   }

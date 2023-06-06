@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -8,6 +6,7 @@
 */
 
 let phrase = '';
+const inVliadInputs = [];
 
 let userConfirmedPhrase = false;
 while (!userConfirmedPhrase) {
@@ -17,6 +16,9 @@ while (!userConfirmedPhrase) {
   }
 
   userConfirmedPhrase = confirm('is this correct: "' + phrase + '"');
+  if (!userConfirmedPhrase) {
+    inVliadInputs.push(phrase);
+  }
 }
 
 const caseSensitive = confirm('do you want a case-sensitive search?');
@@ -33,6 +35,10 @@ while (!userConfirmedQuery) {
   }
 
   userConfirmedQuery = confirm('is this correct: "' + query + '"');
+
+  if (!userConfirmedQuery) {
+    inVliadInputs.push(query);
+  }
 }
 
 let phraseIncludesQuery;
@@ -62,3 +68,5 @@ alert(
     'case sensitive: ' +
     caseSensitive,
 );
+
+console.log(inVliadInputs);

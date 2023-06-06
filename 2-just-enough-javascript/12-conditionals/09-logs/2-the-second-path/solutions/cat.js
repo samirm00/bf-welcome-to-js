@@ -3,9 +3,9 @@
 let input = prompt('enter "cat"');
 
 let path = 0;
-if (input === 'cat') {
+if (input === null) {
   path = 1;
-} else if (input === null) {
+} else if (input === 'cat') {
   path = 2;
 } else {
   path = 3;

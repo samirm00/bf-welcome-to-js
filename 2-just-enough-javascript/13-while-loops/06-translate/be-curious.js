@@ -1,16 +1,13 @@
-// #todo
-
 'use strict';
 
 /* Be Curious
+  Data In: ant text
 
-
-  Data In:
-
-  Data Out:
+  Data Out: curious text
 
   Test Cases:
-
+  '' -> '?'
+  'test' -> "test?"
 */
 
 /* ---  ?  --- */
@@ -30,3 +27,16 @@
 /* ---  ?  --- */
 
 // alert(output)
+
+let input = null;
+while (input === null) {
+  input = prompt('enter something, it will become curious');
+}
+
+let output = '';
+if (input[input.length - 1] !== '?') {
+  output = input + '?';
+} else {
+  output = input;
+}
+alert(output);

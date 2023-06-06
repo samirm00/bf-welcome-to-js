@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 let animal = 'dog';
@@ -14,8 +12,8 @@ let animal = 'dog';
 let repeated = '';
 let i = 0;
 while (i < animal.length) {
-  repeated = repeated + '\n' + animal;
-  i = i + 1;
+  repeated += '\n' + animal;
+  i++;
 }
 
 console.log(repeated);

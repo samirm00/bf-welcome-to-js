@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // combining .toUpperCase or .toLowerCase with .includes is helpful
@@ -20,18 +18,26 @@ console.log('javascript'.toUpperCase().includes('SCRIPT')); // true
 //  fill in the blanks with something that will evaluate to true
 //  there's many different answers! how many can you find?
 
-console.log('PassPort'.toLowerCase().includes(_)); // true
-console.log('hACK YouR FuTuRE'.toLowerCase().includes(_)); // true
-console.log('_Robin_Batman'.toLowerCase().includes(_)); // true
+console.log('-----------------------------------------------');
 
-console.log('PassPort'.toUpperCase().includes(_)); // false
-console.log('hACK YouR FuTuRE'.toUpperCase().includes(_)); // false
-console.log('_Robin_Batman'.toUpperCase().includes(_)); // false
+console.log('PassPort'.toLowerCase().includes('pass')); // true
+console.log('hACK YouR FuTuRE'.toLowerCase().includes('hack')); // true
+console.log('_Robin_Batman'.toLowerCase().includes('bin')); // true
 
-console.log(_.toLowerCase().includes('tim')); // true
-console.log(_.toLowerCase().includes('o w')); // true
-console.log(_.toLowerCase().includes('. e')); // true
+console.log('-----------------------------------------------');
 
-console.log(_.toUpperCase().includes('TIM')); // true
-console.log(_.toUpperCase().includes('O W')); // true
-console.log(_.toUpperCase().includes('. E')); // true
+console.log('PassPort'.toUpperCase().includes('PORTFOLIO')); // false
+console.log('hACK YouR FuTuRE'.toUpperCase().includes('HACKING')); // false
+console.log('_Robin_Batman'.toUpperCase().includes('SUPERMAN')); // false
+
+console.log('-----------------------------------------------');
+
+console.log('ALL THE TIMES'.toLowerCase().includes('tim')); // true
+console.log('hello Walied'.toLowerCase().includes('o w')); // true
+console.log('. example of that'.toLowerCase().includes('. e')); // true
+
+console.log('-----------------------------------------------');
+
+console.log('Tim likes programming'.toUpperCase().includes('TIM')); // true
+console.log('Say hello to Wies'.toUpperCase().includes('O W')); // true
+console.log('. example'.toUpperCase().includes('. E')); // true

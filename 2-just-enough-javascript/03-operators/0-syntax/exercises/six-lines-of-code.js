@@ -1,27 +1,13 @@
-// #todo
-
-// prettier-ignore
-{ // so prettier does not remove the extra spacing
-
 'use strict';
 
+2 + 2; // 4
 
-2 + 2;
+true === true; // true
 
+2 === '2'; // false
 
-true === true;
+console.log('hell' + 'o!'); //hello!
 
+console.log(2 === 2); // true
 
-2 === '2';
-
-
-console.log('hel' + 'o!');
-
-
-console.log(2 === 2);
-
-
-console.log(true === false);
-
-
-}
+console.log(true === false); // false

@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // declare a variable named isBelgian
@@ -12,17 +10,14 @@ console.log(isBelgian); // true
 //  initialize it with the number 4
 
 let height = 4;
+
+// read the variable height
 console.log(height); // 4
 
 // declare a variable named frog
 //  initialize it with the string 'frog'
 
 let frog = 'frog';
+
+// read the variable frog
 console.log(frog); // 'frog'
-
-/* distractors:
-
-  var
-  const
-
-*/
