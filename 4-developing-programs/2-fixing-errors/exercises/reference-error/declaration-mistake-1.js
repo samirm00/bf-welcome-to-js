@@ -1,22 +1,21 @@
-// #todo
-
 'use strict';
 
 /*
   environment:
 
-  name:
-  message:
+  name: ReferenceError
+  message: welf is not defined
 
-  callstack:
+  callstack:  at <anonymous>:20:6
+    at evaller.onload (study-with.js:63:34)
 
-  life cycle:
+  life cycle: execution phase 
 
-  the mistake:
+  the mistake: undeclared variable 
 
-  the fix(es):
+  the fix(es): declare it variable const
 */
 
-welf = 'ingrad';
+const welf = 'ingrad';
 
 console.log(welf);

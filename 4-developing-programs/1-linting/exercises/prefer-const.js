@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /* https://eslint.org/docs/rules/prefer-const
@@ -13,6 +11,6 @@ while (input === null) {
   input = prompt('enter something, it will be broken');
 }
 
-for (let char of input) {
+for (const char of input) {
   alert(char);
 }

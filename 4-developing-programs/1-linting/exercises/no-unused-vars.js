@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /* https://eslint.org/docs/rules/no-unused-vars
@@ -9,7 +7,7 @@
 
 */
 
-let likesApples = confirm('do you like apples?');
+const likesApples = confirm('do you like apples?');
 
 let greeting = '';
 if (likesApples) {
@@ -17,3 +15,5 @@ if (likesApples) {
 } else {
   greeting = 'hello, welcome to my orange garden';
 }
+
+console.log(greeting);

@@ -1,12 +1,10 @@
-// #todo
-
 'use strict';
 
 /* -- 1. get an orange --
 
-  - how many control flow structures are there in this goal?
-  - describe the input a user needs to give to exit this loop
-  - how many paths are there through this Input/Output (I/O) loop?
+  - how many control flow structures are there in this goal? 4 
+  - describe the input a user needs to give to exit this loop. -> orange upper case or lower case
+  - how many paths are there through this Input/Output (I/O) loop? 2 
 */
 
 let theOrange = '';
