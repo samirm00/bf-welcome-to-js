@@ -1,9 +1,15 @@
 'use strict';
 
+/* Remove duplicates
+Ask the user to enter something with duplicates characters
+the duplicates characters  will be removed.
+- if user cancel, prompt again.
+*/
+
 let phrase = null;
 while (phrase === null) {
   phrase = prompt(
-    'enter something with duplicated letters, they will be removed',
+    'enter something with duplicated characters , they will be removed',
   );
 }
 

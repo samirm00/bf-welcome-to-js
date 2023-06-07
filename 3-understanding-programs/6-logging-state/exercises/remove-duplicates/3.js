@@ -18,6 +18,9 @@ let noRepetitions = '';
 for (const next of phrase) {
   if (next !== previous) {
     noRepetitions = noRepetitions + next;
+  } else {
+    // log removed letter
+    console.log(next);
   }
   previous = next;
 }

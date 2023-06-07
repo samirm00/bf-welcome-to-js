@@ -28,6 +28,9 @@ if (userInput === '-h') {
   let secretPhrase = '';
   while (secretPhrase === '') {
     secretPhrase = prompt('Player 1: enter a secret phrase');
+
+    // log secretPhrase
+    console.log(secretPhrase);
   }
 
   if (secretPhrase === null) {
@@ -63,6 +66,9 @@ if (userInput === '-h') {
             '"\n\n' +
             'what do you think the secret phrase is?',
         );
+
+        // log user 2 guess
+        console.log(guess);
       }
 
       if (guess === null) {
@@ -92,6 +98,9 @@ if (userInput === '-h') {
         }
       }
     }
+
+    // log winner
+    console.log(winner);
   }
   alert('game over. the winner is: ' + winner);
 } else if (userInput === null) {

@@ -1,5 +1,14 @@
 'use strict';
 
+/* Madlib:
+- ask the user for adjective, if the user cancel prompt him again
+- ask the user for noun, if the user cancel prompt him again
+- ask the user for verb, if the user cancel prompt him again
+
+notify the user with fun message
+
+*/
+
 let adjective = null;
 while (adjective === null) {
   adjective = prompt('enter an adjective');

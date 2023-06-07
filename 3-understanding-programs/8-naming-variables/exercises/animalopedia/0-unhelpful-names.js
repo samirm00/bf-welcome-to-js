@@ -12,8 +12,6 @@
     assignments:
       types:
       scopes:
-
-
 */
 
 alert(

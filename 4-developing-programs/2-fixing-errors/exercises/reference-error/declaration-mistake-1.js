@@ -1,7 +1,7 @@
 'use strict';
 
 /*
-  environment:
+  environment: chrome 
 
   name: ReferenceError
   message: welf is not defined

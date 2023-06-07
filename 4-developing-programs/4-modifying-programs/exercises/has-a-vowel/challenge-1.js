@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -17,7 +15,7 @@ const vowels = 'aeiouAEIOU';
 
 let hasAVowel = false;
 for (const char of characters) {
-  if (vowels.includes(char)) {
+  if (vowels.toUpperCase().includes(char)) {
     hasAVowel = true;
     break;
   }

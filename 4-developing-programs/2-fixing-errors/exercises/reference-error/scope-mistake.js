@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -19,11 +17,11 @@
 
 const userName = 'chiobin';
 console.log('userName:', typeof userName, userName);
-
+let isValidUserName;
 if (userName.length > 4) {
-  const isValidUserName = true;
+  isValidUserName = true;
 } else {
-  const isValidUserName = false;
+  isValidUserName = false;
 }
 
 console.log('isValidUserName:', typeof isValidUserName, isValidUserName);

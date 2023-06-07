@@ -23,7 +23,7 @@
   data after: a string
 */
 let input = null;
-while ('string' !== typeof input) {
+while (typeof input !== 'string') {
   input = prompt('enter some text, the program will check if it is excited');
 }
 
@@ -34,7 +34,7 @@ while ('string' !== typeof input) {
 // create a new string with all the whitespace removed from the end
 const trimmedInput = input.trimEnd();
 // check if the last character of the trimmed string is '!'
-const isExcited = trimmedInput[trimmedInput.length - 1] == '!';
+const isExcited = trimmedInput[trimmedInput.length - 1] === '!';
 
 /* --- construct a message for the user ---
   data before: user-provided string, a boolean flag for excitement
@@ -48,6 +48,6 @@ if (isExcited) {
 }
 
 /* --- display the message for the user ---
- data out: the Ítring describing the user's input
+ data out: the message describing the user's input
 */
 alert(message);

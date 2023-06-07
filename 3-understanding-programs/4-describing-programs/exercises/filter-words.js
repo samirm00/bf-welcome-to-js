@@ -1,5 +1,18 @@
 'use strict';
 
+/* Keep word(s)
+
+- the program will ask the user for a sentence with at least 3 characters  and one space
+then it will ask the user if he want to keep the first and second words 
+if yes, it will alert both words else 
+it will remove the unwanted  word(s), if the user chose to 
+unwanted both words it will alert a empty string.
+
+-if the user click cancel or empty string it will alert a useful message and prompt him again
+- if no space in the sentence it will alert a useful message and prompt again
+
+
+*/
 let sentence = '';
 
 let isValid = false;

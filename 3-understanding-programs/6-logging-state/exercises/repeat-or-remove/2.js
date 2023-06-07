@@ -8,6 +8,9 @@
 let phrase = null;
 while (phrase === null) {
   phrase = prompt('enter a phrase');
+
+  // log user input
+  console.log(phrase);
 }
 
 const keepLetters = confirm(
@@ -22,10 +25,16 @@ if (keepLetters) {
     if (letters.includes(character.toLowerCase())) {
       newPhrase = newPhrase + character;
     }
+
+    // log characters
+    console.log(character);
   }
 } else {
   for (const character of phrase) {
     newPhrase = newPhrase + character + character;
+
+    // log characters
+    console.log(character);
   }
 }
 

@@ -1,5 +1,13 @@
 'use strict';
 
+/* Search
+Ask the user for a phrase, if cancel prompt again
+ask the user to confirm his phrase, if no confirm prompt again
+ask th user if case sensitive should be considered.
+Ask the user for a query, if cancel prompt again
+ask the user to confirm his query, if no confirm prompt again
+notify the user if query existed in a phrase or not.
+*/
 let phrase = '';
 
 let userConfirmedPhrase = false;

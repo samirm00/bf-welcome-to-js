@@ -1,5 +1,14 @@
 'use strict';
 
+/* Guess a phrase 
+- ask the first user for a phrase.
+- ask the second user to guess the phrase if guess is correct got 3 points
+- if the first guess was wrong, ask the second user to guess again if guess2 was correct 2 points
+- if the first and the second guesses were wrong ask for the a 
+  third guess if was correct got 1 point
+- else 0 point
+*/
+
 alert(`Guess a phrase in 3 tries
 
   Player 1:
