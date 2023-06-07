@@ -3,9 +3,11 @@
 /* Execution Paths
 
   try predicting how this game works just by reading the code
-    how many prompts are there?
-    how many choices does each user have?
-    how many paths are there total?
+    how many prompts are there? 4 prompts 
+    how many choices does each user have? 
+    first user -> 5 choices (-h , play, secretPhrase,
+       clue or not known command for both clue and secretPhrase )
+    how many paths are there total? in total 14 paths 
     how would you draw a diagram of this game?
 
 */

@@ -1,5 +1,11 @@
 'use strict';
 
+/* Mirror 
+ask the user for a text
+  - if null prompt again
+  - else show the text mirrored
+*/
+
 let text = null;
 while (text === null) {
   text = prompt('enter some text, it will be mirrored');

@@ -13,7 +13,6 @@
       types:
       scopes:
 
-
 */
 
 alert('you will need to enter strings with "e" in the right place');

@@ -1,5 +1,12 @@
 'use strict';
 
+/* Check characters
+ask the user to input anything with 5 characters length
+- if the user enter something with more than 5 characters it will notify him with a message and the number of charchters 
+- else if the user enter something with 5 charactersor less , notify the user too short 
+- if the user cancel show useful message and prompt gain
+*/
+
 let userInput = '';
 
 let isTooShort = true;

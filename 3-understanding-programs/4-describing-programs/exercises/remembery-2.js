@@ -1,5 +1,11 @@
 'use strict';
 
+/* Guess secrets
+- ask the first user for 3 secrets .
+- ask the second user to remember the secrets and enter them in order
+- for reach correct secret the second user will get 1 point.
+*/
+
 alert(`Guess 3 secrets in 3 tries
 
   Player 1:

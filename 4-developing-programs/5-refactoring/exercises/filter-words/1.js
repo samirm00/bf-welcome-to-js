@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -8,8 +6,7 @@
 
 let sentence = '';
 
-let isValid = false;
-while (!isValid) {
+while (true) {
   sentence = prompt('enter a sentence with at least 2 words');
 
   if (sentence === null) {
@@ -23,7 +20,7 @@ while (!isValid) {
   } else if (!sentence.includes(' ')) {
     alert('there is only one word');
   } else {
-    isValid = true;
+    break;
   }
 }
 

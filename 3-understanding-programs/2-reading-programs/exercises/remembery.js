@@ -2,7 +2,8 @@
 
 /* -- 1. show the instructions --
 
-  - are there any variables used in this goal?
+  - are there any variables used in this goal?  
+  phrase1, phrase2, phrase3 , guess1, guess2, guess3, points
 */
 
 alert(`Guess 3 phrases in 3 tries

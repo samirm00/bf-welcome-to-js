@@ -1,5 +1,11 @@
 'use strict';
 
+/* Check Vowels
+ask the user to input some characters
+- if the characters includes vowels then notify the user
+- else notify the user characters has no vowels
+
+*/
 let characters = null;
 while (characters === null) {
   characters = prompt('enter some characters');

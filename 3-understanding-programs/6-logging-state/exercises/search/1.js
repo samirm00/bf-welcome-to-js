@@ -6,18 +6,20 @@
 */
 
 let phrase = '';
-const inVliadInputs = [];
+const inValidInputs = [];
 
 let userConfirmedPhrase = false;
 while (!userConfirmedPhrase) {
   phrase = prompt('enter a phrase to search');
   if (phrase === null) {
+    // add to inValidInputs
+    inValidInputs.push(null);
     continue;
   }
 
   userConfirmedPhrase = confirm('is this correct: "' + phrase + '"');
   if (!userConfirmedPhrase) {
-    inVliadInputs.push(phrase);
+    inValidInputs.push(phrase);
   }
 }
 
@@ -31,13 +33,15 @@ while (!userConfirmedQuery) {
     'enter a search query, this program will check if it exists in your phrase',
   );
   if (query === null) {
+    // add to inValidInputs
+    inValidInputs.push(null);
     continue;
   }
 
   userConfirmedQuery = confirm('is this correct: "' + query + '"');
 
   if (!userConfirmedQuery) {
-    inVliadInputs.push(query);
+    inValidInputs.push(query);
   }
 }
 
@@ -69,4 +73,4 @@ alert(
     caseSensitive,
 );
 
-console.log(inVliadInputs);
+console.log(inValidInputs);

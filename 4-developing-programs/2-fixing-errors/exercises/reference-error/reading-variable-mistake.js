@@ -17,6 +17,5 @@
   the fix(es):
 */
 
-console.log(tomatoes);
-
 let tomatoes = 'fresh';
+console.log(tomatoes);

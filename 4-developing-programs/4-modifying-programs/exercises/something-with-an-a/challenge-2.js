@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -13,15 +11,17 @@
     tell the user whether their input has "a" or "A"
 */
 
-const userInput = prompt('please enter something with an "a" in it');
+const userInput = prompt(
+  'please enter something with an "a" upper case or lower case in it',
+);
 
 let reaction;
 if (userInput === null || userInput === '') {
   reaction = 'nothing!  why !!! ??? !!!';
-} else if (userInput.includes('a')) {
+} else if (userInput.toLowerCase().includes('a')) {
   reaction = '"' + userInput + '" is perfect!';
 } else {
-  reaction = '"' + userInput + '" has no "a" in it';
+  reaction = '"' + userInput + '" has no "a" or "A" in it';
 }
 
 alert(reaction);
