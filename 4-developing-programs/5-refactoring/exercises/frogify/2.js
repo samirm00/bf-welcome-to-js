@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -18,16 +16,12 @@ while (toBeFrogged === null) {
 
 let frogged = '';
 
-for (const character of toBeFrogged) {
-  if (character === 'f') {
-    frogged = frogged + 'frog';
-    continue;
-  }
-  if (character === 'F') {
-    frogged = frogged + 'FROG';
-    continue;
-  }
-  frogged = frogged + character;
+while (true) {
+  // Replace all 'f' with 'frog'
+  frogged = toBeFrogged.replaceAll('f', 'frog');
+  // Replace all 'F' with 'FROG'
+  frogged = frogged.replaceAll('F', 'FROG');
+  break;
 }
 
 alert(frogged);
