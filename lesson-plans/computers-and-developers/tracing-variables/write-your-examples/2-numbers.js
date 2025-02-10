@@ -7,16 +7,17 @@ TODO: create a few variables(numbers):
 declared, initialized, read , reassigned,...
 */
 
-// declare a variable num1 and initialize it to the value 5
-const num1 = 5;
 
-// declare a variable num2 and initialize it to the value 10
-const num2 = 10;
+let a = 2; // a => declare, initialize 2
 
-// read the variable num1
-// read the variable num2
-// declare a variable sum and initialize it to the value 15
-const sum = num1 + num2;
+let b = 12; // b => declare, initialize, 12
 
-// read the variable sum
-console.log(sum);
+let sum = a + b; // read b 12, read a 2, declare initialize sum 14
+
+console.log(sum); // log sum 14
+
+a = 21; // read a 2, reassign a 21
+
+sum = a + b; // read b 12, read a 21, reassign sum 33 
+
+console.log(sum); // log sum 33
