@@ -7,6 +7,13 @@ TODO: create a few variables(null):
 declared, initialized, read , reassigned,...
 */
 
-// declare a variable message and initialize it to the value null
-const message = null;
-console.log(message);
+let emptyVariable = null; // declare and initialize emptyVariable
+
+let anotherEmptyVariable = null; // declare and initialize anotherEmptyVariable
+
+console.log(emptyVariable); // log emptyVariable
+
+emptyVariable = "The most valuable variable" // read and reassign emptyVariable
+
+console.log(emptyVariable) // log emptyVariable "The most valuable variable"
+

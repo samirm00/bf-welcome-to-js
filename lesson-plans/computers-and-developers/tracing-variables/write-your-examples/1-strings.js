@@ -7,17 +7,17 @@ TODO: create a few variables(strings):
 declared, initialized, read , reassigned,...
 */
 
-// declare a variable firstName and initialize it to the value 'John'
-let firstName = 'John';
 
-// assign the variable firstName
-firstName = 'Jane';
+let greeting = 'Ciao'; // greeting => declare, initialize 'Ciao'
 
-// declare a variable lastName and initialize it to the value 'Doe'
-const lastName = 'Doe';
+let name = 'Emilia'; // name => declare, initialize 'Emilia'
 
-// declare a variable message and initialize it to the value 'Hello there, my name is : John Doe'
-const message = `Hello there, my name is : ${firstName} ${lastName}`;
+let message = greeting + ', ' + name + '!'; // read name 'Emilia', read greeting 'Ciao', declare and initialize message 'Ciao, Emilia!'
 
-// read the variable message
-console.log(message);
+console.log(message); // log message 'Ciao, Emilia!'
+
+greeting = 'Hola'; // read greeting 'Ciao', reassign greeting 'Hola']
+
+message = greeting + ', ' + name + '!'; // read name 'Emilia', read greeting 'Hola', reassign message 'Hola, Emilia!'
+
+console.log(message); // log message 'Hola, Emilia!'

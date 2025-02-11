@@ -7,19 +7,17 @@ TODO: create a few variables(boolean):
 declared, initialized, read , reassigned,...
 */
 
-// declare a variable isOldEnough and initialize it to the value false
-const isOldEnough = false;
 
-// declare a variable message and initialize it to the value ''
-let message = '';
-// read the variable isOldEnough
-if (isOldEnough) {
-  // assign the variable message
-  message = 'You can drive';
-} else {
-  // assign the variable message
-  message = "Sorry, you can't drive yet!";
-}
+let isYoung = true; // declare and initialize
 
-// read the variable message
-console.log(message);
+let isBeautiful = false; // declare and initialize
+
+let canMarry = isYoung && isBeautiful; // read isBeautiful, read isYoung, declare and initialize canMarry
+
+console.log(canMarry); // log
+
+isBeautiful = true; // read and reassign
+
+canMarry = isYoung && isBeautiful; // read isBeautiful, read isYoung, reassign canMarry
+
+console.log(canMarry); // log 
