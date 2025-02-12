@@ -11,11 +11,17 @@
   - Try to create an infinite loop so the user gets stuck inside your prompt.
 */
 
-let userInput;
-while (true) {
-  userInput = prompt('input something:');
-  console.log(userInput);
-}
+// let userInput;
+// while (true) {
+//   userInput = prompt('input something:');
+//   console.log(userInput);
+// }
 
 // Note this will never executed because we have infinite loop
-alert('thank you!');
+// alert('thank you!');
+
+let input;
+while (true) {
+  input = prompt('type something');
+  console.log (input);
+}
