@@ -16,12 +16,12 @@ alert(greeting);
   - Greet them with their full name.
 */
 
-const firstName = prompt('Please enter your first name : ');
-const lastName = prompt('Please enter your last name : ');
+
+const firstName = prompt('What is your first name : ');
+const lastName = prompt('What is your last name : ');
 
 let message = '';
 
-// if we have firstName and lastName
 if (firstName && lastName) {
   message = `hello ${firstName} ${lastName}!`;
 } else {
