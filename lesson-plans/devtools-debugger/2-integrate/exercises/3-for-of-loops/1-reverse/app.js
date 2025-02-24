@@ -12,40 +12,40 @@ whenFormDataChanges('reversify', () => {
 
   // --- read user input ---
 
-  let text = readString('to-reverse');
-  let screaming = readBoolean('loud');
+  // let text = readString('to-reverse');
+  // let screaming = readBoolean('loud');
 
-  console.log(text, screaming);
+  // console.log(text, screaming);
 
-  // --- reverse the string input ---
+  // // --- reverse the string input ---
 
-  let reversed = '';
-  for (let character of text) {
-    if (!reversed.includes(character)) {
-      reversed = character + reversed;
-    }
-  }
+  // let reversed = '';
+  // for (let character of text) {
+  //   if (!reversed.includes(character)) {
+  //     reversed = character + reversed;
+  //   }
+  // }
 
-  console.log(reversed);
+  // console.log(reversed);
 
-  // --- set to upper or lower case ---
+  // // --- set to upper or lower case ---
 
-  let finalText = '';
-  if (reversed.length > 5) {
-    finalText = reversed.toUpperCase();
-  } else if (reversed.length < 5) {
-    finalText = reversed.toLowerCase();
-  } else {
-    finalText = reversed;
-  }
+  // let finalText = '';
+  // if (reversed.length > 5) {
+  //   finalText = reversed.toUpperCase();
+  // } else if (reversed.length < 5) {
+//   //   finalText = reversed.toLowerCase();
+//   // } else {
+//     finalText = reversed;
+//   }
 
-  console.log(finalText);
+//   console.log(finalText);
 
-  // --- display the final text ---
+//   // --- display the final text ---
 
-  // display the final text to the <pre> with id "out"
-  displayString('out', finalText);
-});
+//   // display the final text to the <pre> with id "out"
+//   displayString('out', finalText);
+// });
 
 /*  ===== Challenges =====
 
@@ -56,3 +56,71 @@ whenFormDataChanges('reversify', () => {
   - make sure each character appears only once in the reversed text
 
 */
+
+  // --- read user input ---
+  // let text = readString('to-reverse');
+  // let screaming = readBoolean('loud');
+
+  // console.log(text, screaming);
+
+  // // --- reverse the string input ---
+  // let reversed = '';
+  // for (let character of text) {
+  //   if (!reversed.includes(character)) {
+  //     reversed = character + reversed;
+  //   }
+  // }
+
+//   console.log(reversed);
+
+//   // --- set to upper or lower case based on input length ---
+//   let finalText = '';
+//   if (text.length > 7) {
+//     finalText = reversed.toUpperCase();
+//   } else if (text.length < 4) {
+//     finalText = reversed.toLowerCase();
+//   } else {
+//     finalText = reversed;
+//   }
+
+//   console.log(finalText);
+
+//   // --- display the final text ---
+//   displayString('out', finalText);
+// });
+
+  // --- read user input ---
+  let text = readString('to-reverse');
+  let screaming = readBoolean('loud');
+
+  console.log(text, screaming);
+
+  // --- reverse the string input while keeping unique characters ---
+  let reversed = '';
+  let seen = new Set();
+
+  for (let i = text.length - 1; i >= 0; i--) {
+    let character = text[i];
+    if (!seen.has(character)) {
+      reversed += character;
+      seen.add(character);
+    }
+  }
+
+  console.log(reversed);
+
+  // --- set to upper or lower case based on input length ---
+  let finalText = '';
+  if (text.length > 7) {
+    finalText = reversed.toUpperCase();
+  } else if (text.length < 4) {
+    finalText = reversed.toLowerCase();
+  } else {
+    finalText = reversed;
+  }
+
+  console.log(finalText);
+
+  // --- display the final text ---
+  displayString('out', finalText);
+});

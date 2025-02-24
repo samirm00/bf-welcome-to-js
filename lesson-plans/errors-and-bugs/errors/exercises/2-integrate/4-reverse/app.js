@@ -15,9 +15,9 @@ import {
 
   life cycle: execution 
 
-  the mistake: try to iterate throw a boolean 
+  the mistake: screaming is boolean 
 
-  the fix(es): iterate throw a string text
+  the fix(es): change screaming to text
 */
 
 whenFormDataChanges('reversify', () => {

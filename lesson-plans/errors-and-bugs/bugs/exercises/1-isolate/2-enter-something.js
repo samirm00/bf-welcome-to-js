@@ -9,19 +9,20 @@
     'JavaScript' -> 'you entered "JavaScript"'
 
   experiment 1
-    line:
-    why:
-    trying:
+    line: 24
+    why: infinite loop
+    trying: add break
 
 */
 
 let message = '';
 
 let input = null;
-while (!input) {
-  input = prompt('enter something');
+while (input === null || input.length === 0) {
+  const input = prompt('enter something!');
 
   message = 'you entered "' + input + '"';
+  break
 }
 
 alert(message);

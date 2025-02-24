@@ -8,7 +8,7 @@ console.log('--- in execution phase ---');
   name: SyntaxError
   message: Unexpected number
 
-  location: line 25
+  location: line 20
 
   life cycle: execution
 

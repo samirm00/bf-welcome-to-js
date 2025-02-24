@@ -14,9 +14,9 @@ import {
 
   life cycle: creation 
 
-  the mistake: logging undefined values
+  the mistake: logging undefined values 
 
-  the fix(es): changing the values to a string
+  the fix(es): changing the values to ""
 */
 
 whenFormDataChanges('input', () => {

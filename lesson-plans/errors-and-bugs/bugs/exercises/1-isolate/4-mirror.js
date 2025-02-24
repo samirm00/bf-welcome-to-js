@@ -8,9 +8,9 @@
     ':)' -> '):|:)'
 
   experiment 1
-    line:
-    why:
-    trying:
+    line: 25
+    why: too many mirrored
+    trying: change the 'mirrored' to 'character' and 'character' to 'mirrored'
 
 */
 

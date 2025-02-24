@@ -8,9 +8,9 @@
     'abcdef' -> 'too long'
 
   experiment 1
-    line:
-    why:
-    trying:
+    line: 19
+    why: it becomes null
+    trying: change the assignment operator into strict equality operator
 
 */
 

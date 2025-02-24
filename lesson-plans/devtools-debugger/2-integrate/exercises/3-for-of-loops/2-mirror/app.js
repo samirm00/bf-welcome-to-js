@@ -11,26 +11,26 @@ whenFormDataChanges('input', () => {
 
   // --- read the user's input ---
 
-  let userText = readString('to-mirror');
-  let userDelimiter = readString('delimiter');
+  // let userText = readString('to-mirror');
+  // let userDelimiter = readString('delimiter');
 
   // --- mirror the text ---
 
   // the delimiter by default is vertical bar
-  let mirrored = ' | ';
+//   let mirrored = ' | ';
 
-  // if there is a user delimiter then use it
-  if (userDelimiter) {
-    mirrored = ` ${userDelimiter} `;
-  }
-  for (let char of userText) {
-    mirrored = char.toUpperCase() + mirrored + char.toLowerCase();
-  }
+//   // if there is a user delimiter then use it
+//   if (userDelimiter) {
+//     mirrored = ` ${userDelimiter} `;
+//   }
+//   for (let char of userText) {
+//     mirrored = char.toUpperCase() + mirrored + char.toLowerCase();
+//   }
 
-  // --- display the result ---
+//   // --- display the result ---
 
-  displayString('output', mirrored);
-});
+//   displayString('output', mirrored);
+// });
 
 /*  ===== Challenges =====
 
@@ -46,3 +46,26 @@ whenFormDataChanges('input', () => {
       you will need to add an input to the HTML file
 
 */
+
+  // --- read the user's input ---
+  let userText = readString('to-mirror');
+  let userDelimiter = readString('delimiter').trim(); // Trim to remove unwanted spaces
+
+  // --- mirror the text ---
+
+  // Default delimiter is "|", but user can choose anything
+  let delimiter = userDelimiter || '|';
+  let mirrored = ` ${delimiter} `;
+
+  // Create mirrored text in uppercase
+  for (let char of userText) {
+    mirrored = char.toUpperCase() + mirrored + char.toUpperCase();
+  }
+
+  console.log(mirrored);
+
+  // --- display the result ---
+  displayString('output', mirrored);
+});
+
+

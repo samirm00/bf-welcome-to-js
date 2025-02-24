@@ -12,9 +12,9 @@ console.log('--- in execution phase ---');
 
   life cycle: execution
 
-  the mistake: left side assinment 
+  the mistake: left side assignment 
 
-  the fix(es): make it right side assinment 
+  the fix(es): make it right side assignment 
 */
 
 let isHappy = false;

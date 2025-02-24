@@ -21,12 +21,22 @@ whenFormDataChanges('search-input', () => {
 
   let doesExist = false;
 
-  if (!caseSensitive) {
+  // if (!caseSensitive) {
+  //   let smallSearchThis = searchThis.toLowerCase();
+  //   let smallFindThis = findThis.toLowerCase();
+  //   doesExist = smallSearchThis.includes(smallFindThis);
+  // } else {
+  //   doesExist = searchThis.includes(findThis);
+  // }
+
+  if (caseSensitive) {
+    // Case-sensitive search
+    doesExist = searchThis.includes(findThis);
+  } else {
+    // Case-insensitive search
     let smallSearchThis = searchThis.toLowerCase();
     let smallFindThis = findThis.toLowerCase();
     doesExist = smallSearchThis.includes(smallFindThis);
-  } else {
-    doesExist = searchThis.includes(findThis);
   }
 
   // --- create the message ---
